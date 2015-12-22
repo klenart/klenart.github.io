@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face{
+    font-family: "Caviar Dreams";
+    src: url('/Fonts/CaviarDreams.ttf'),
+}
+@font-face{
+    font-family: "The Goldsmith Vintage";
+    src: url('/Fonts/The Goldsmith_Vintage.ttf'),
+}
+
+
 .image {
     height: 700px;
     background: #55e6c5;
@@ -9,8 +20,7 @@
     }
 
 .image2 {
-  width: 200px;
-  height:200px;
+  height:300px;
 }
 
 html, body {
@@ -91,15 +101,27 @@ h3 {
     margin: 30px 60px;
 }
 #wall_1 {
-    background: url(../Images/Mommy-top.jpg) ;
+    background: url(../Images/Back-aqua.jpg) ;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 #wall_2 {
-    background: url(../Images/wood.png) repeat;
+    background: url(../Images/Back-Jelly.jpg) repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+#wall_3 {
+    background: url(../Images/Back-Macro.jpg) repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#wall_4 {
+    background: url(../Images/Back-Land.jpg) repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
 
 
 #nav {
@@ -212,14 +234,15 @@ nav.page-navigation .current a {
 h1::first-letter {
     font-size: 100px;
     font-weight: 600;
-    color:#65e64c;
+    color:#0438e3;
 }
+
 
 
 
 .center{
   align-self: center;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .slick-center .slide-h3{
     color: #FFF;
@@ -240,7 +263,7 @@ h1::first-letter {
     margin-left: 5px;
   }
   .slick-slide{
-    opacity: .7;
+    opacity: .5;
   }
   .slick-center{
     display: block;
