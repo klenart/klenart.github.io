@@ -5,12 +5,12 @@
 
 @font-face{
     font-family: CaviarDreams;
-    src: url(CaviarDreams.ttf) format:("truetype"),
+    src: url(../CaviarDreams.ttf) format:("truetype"),
 }
 
 @font-face{
     font-family: TheGoldsmithVintage;
-    src: url(The Goldsmith_Vintage.ttf) format:("truetype"),
+    src: url(../The Goldsmith_Vintage.ttf) format:("truetype"),
 }
 
 
