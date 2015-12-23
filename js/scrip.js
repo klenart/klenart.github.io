@@ -21,6 +21,7 @@ $(window).load(
 
   function() { 
 
+	require('js/jquery.nicescroll.js');
     $("html").niceScroll({
         cursorcolor:"rgba(30,30,30,.5)",
         zindex:999,
