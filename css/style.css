@@ -5,12 +5,12 @@
 
 @font-face{
     font-family: "Caviar Dreams";
-    src: url('CaviarDreams.ttf'),
+    src: url('CaviarDreams.ttf') format:("truetype"),
 }
 
 @font-face{
     font-family: "The Goldsmith Vintage";
-    src: url('The Goldsmith_Vintage.ttf'),
+    src: url('The Goldsmith_Vintage.ttf') format:("truetype"),
 }
 
 
@@ -52,6 +52,7 @@ h4 {
   margin: 18px 150px;
   opacity: 1;
 }
+
 h2 {
   position:relative;
   text-align:center;
