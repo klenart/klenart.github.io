@@ -1,7 +1,20 @@
+function require(script) {
+    $.ajax({
+        url: script,
+        dataType: "script",
+        async: false,
+        success: function () {
+            // all good...
+        },
+        error: function () {
+            throw new Error("Could not load script " + script);
+        }
+    });
+}
 
 $(window).load(function() {
+	require('js/jquery.stellar.js');
     $(window).stellar();
-    
 });
 
 $(window).load(
