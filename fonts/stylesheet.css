@@ -4,12 +4,7 @@
 
 @font-face {
     font-family: 'caviar_dreamsregular';
-    src: url('caviardreams-webfont.eot');
-    src: url('caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('caviardreams-webfont.woff2') format('woff2'),
-         url('caviardreams-webfont.woff') format('woff'),
-         url('caviardreams-webfont.ttf') format('truetype'),
-         url('caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    src: url('caviardreams-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -20,12 +15,7 @@
 
 @font-face {
     font-family: 'the_goldsmith_vintagevintage';
-    src: url('the_goldsmith_vintage-webfont.eot');
-    src: url('the_goldsmith_vintage-webfont.eot?#iefix') format('embedded-opentype'),
-         url('the_goldsmith_vintage-webfont.woff2') format('woff2'),
-         url('the_goldsmith_vintage-webfont.woff') format('woff'),
-         url('the_goldsmith_vintage-webfont.ttf') format('truetype'),
-         url('the_goldsmith_vintage-webfont.svg#the_goldsmith_vintagevintage') format('svg');
+    src: url('the_goldsmith_vintage-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
