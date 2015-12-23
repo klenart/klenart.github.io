@@ -4,13 +4,13 @@
 }
 
 @font-face{
-    font-family: "Caviar Dreams";
-    src: url('CaviarDreams.ttf') format:("truetype"),
+    font-family: CaviarDreams;
+    src: url(CaviarDreams.ttf) format:("truetype"),
 }
 
 @font-face{
-    font-family: "The Goldsmith Vintage";
-    src: url('The Goldsmith_Vintage.ttf') format:("truetype"),
+    font-family: TheGoldsmithVintage;
+    src: url(The Goldsmith_Vintage.ttf) format:("truetype"),
 }
 
 
@@ -48,7 +48,7 @@ h4 {
   position:absolute;
   font-size: 40px;
   color: black;
-  font-family: 'The Goldsmith Vintage', sans-serif;
+  font-family: 'TheGoldsmithVintage', sans-serif;
   margin: 18px 150px;
   opacity: 1;
 }
@@ -58,7 +58,7 @@ h2 {
   text-align:center;
   font-size: 120px;
   color: white;
-  font-family: 'The Goldsmith Vintage', sans-serif;
+  font-family: 'TheGoldsmithVintage', sans-serif;
   font-weight: 200;
   margin: 30px 30px;
   top:250px;
@@ -71,7 +71,7 @@ h3 {
   text-align:center;
   font-size: 30px;
   color: white;
-  font-family: 'Caviar Dreams', sans-serif;
+  font-family: 'CaviarDreams', sans-serif;
   font-weight: 5;
   letter-spacing: 20px;
   margin: 30px 30px;
@@ -91,14 +91,14 @@ h3 {
 .content h1 {
     font-size: 75px;
     color: #464646;
-    font-family: 'The Goldsmith Vintage', serif;
+    font-family: 'TheGoldsmithVintage', serif;
     font-weight: 600;
     margin: 30px 60px;
 }
 .content p {
     font-size:20px;
     color: #343434;
-    font-family: 'Caviar Dreams', sans-serif;
+    font-family: 'CaviarDreams', sans-serif;
     font-weight: 300;
     margin: 30px 60px;
 }
@@ -156,7 +156,7 @@ h3 {
   padding: 23px;
   font-size:16px;
   text-decoration: none;
-  font-family: 'Caviar Dreams', sans-serif;
+  font-family: 'CaviarDreams', sans-serif;
   color: #343434;
 }
 
@@ -177,7 +177,7 @@ a{
   padding: 23px;
   font-size: 40px;
   text-decoration: none;
-  font-family: 'Caviar Dreams', sans-serif;
+  font-family: 'CaviarDreams', sans-serif;
   color: #343434;
 }
 
