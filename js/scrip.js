@@ -1,10 +1,10 @@
 
-$(document).ready(function() {
+$(window).load(function() {
     $(window).stellar();
     
 });
 
-$(document).ready(
+$(window).load(
 
   function() { 
 
