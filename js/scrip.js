@@ -28,6 +28,7 @@ function chooseRandom(choices, count) {
 }
 
 function calcRowWidth() {
+	if ($('#recent-image-gallery').length == 0) return 0; // Don't need to do anything if there isn't a gallery
 	var width = $(window).width(),
 		imgWidth = $('.thumbnail')[0].width;
 	return Math.min(Math.floor(width/imgWidth), 3); // Don't want too many abreast - may change this later
@@ -37,7 +38,7 @@ var currentRowWidth;
 
 function rearrangeGallery() {
 	var rowWidth = calcRowWidth();
-	if (rowWidth == currentRowWidth) return; // Don't want to bother with this other stuff if there's nothing to change
+	if (rowWidth == currentRowWidth || rowWidth == 0) return; // Don't want to bother with this other stuff if there's nothing to change
 	currentRowWidth = rowWidth;
 	
 	// If it's too narrow, we don't want a huge stack of images
