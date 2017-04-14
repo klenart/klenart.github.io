@@ -64,6 +64,7 @@ $(document).ready(function($) {
 		require('js/jquery.stellar.js', function() {
 			$.stellar();
 		});
+		$('.site-navigation').onePageNav();
 	} else {
 		// Workaround for weird image stretching on iOS
 		// Doesn't play nice with Stellar, but that doesn't work on mobile anyways
