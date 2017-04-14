@@ -1,0 +1,41 @@
+#wall_1 {
+    background: url(../Images/Back-aqua.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#wall_2 {
+    background: url(../Images/Back-Jelly.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#wall_3 {
+    background: url(../Images/Back-Macro.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#wall_4 {
+    background: url(../Images/Back-Land.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#wall_1_mobile {
+    background: url(../Images/Back-aqua.jpg);
+    background-size: 100% 100%;
+    background-attachment: scroll;
+}
+#wall_2_mobile {
+    background: url(../Images/Back-Jelly.jpg);
+    background-attachment: scroll;
+    background-size: 100% 100%;
+}
+#wall_3_mobile {
+    background: url(../Images/Back-Macro.jpg);
+    background-attachment: scroll;
+    background-size: 100% 100%;
+}
+#wall_4_mobile {
+    background: url(../Images/Back-Land.jpg);
+    background-attachment: scroll;
+    background-size: 100% 100%;
+}

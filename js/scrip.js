@@ -59,10 +59,17 @@ function rearrangeGallery() {
 
 $(document).ready(function($) {
 	if (!/Mobi/.test(navigator.userAgent)) {
-		// Stellar only works on the desktop
+		// Stellar only really works on the desktop
 		require('js/jquery.stellar.js', function() {
 			$.stellar();
 		});
+	} else {
+		// Workaround for weird image stretching on iOS
+		// Doesn't play nice with Stellar, but that doesn't work on mobile anyways
+		var walls = $('[class^="wall_"]');
+		for (var i = 0; i < walls.length; i++) {
+			walls[i].id = walls[i].id + "_mobile";
+		}
 	}
 	
 	currentRowWidth = 3; // Always starts off this way
