@@ -167,14 +167,13 @@ h3 {
   color: #fff;
 }
 
-a{
+a.big-link {
   padding: 23px;
   font-size: 40px;
   text-decoration: none;
   font-family: caviar_dreamsregular, sans-serif;
   color: #343434;
 }
-
 
 .ghost-button{
   position:relative;
@@ -191,6 +190,11 @@ a{
               border-color 0.2s ease-out,
               border-radius 0.2s ease-out;
 }
+
+a.ghost-button.big-link {
+  color: #fff;
+}
+
 .ghost-button:hover,
 .ghost-button:active {
   background-color: #fff;
