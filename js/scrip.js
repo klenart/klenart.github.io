@@ -62,7 +62,7 @@ $(document).ready(function($) {
 		$.stellar();
 	});
 	
-	currentRowWidth = calcRowWidth();
+	currentRowWidth = 3; // Always starts off this way
 	
 	require('js/jquery.nicescroll.js', function() {	
 		$("html").niceScroll({
