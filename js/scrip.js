@@ -66,10 +66,15 @@ $(document).ready(function($) {
 	} else {
 		// Workaround for weird image stretching on iOS
 		// Doesn't play nice with Stellar, but that doesn't work on mobile anyways
-		var walls = $('[class^="wall_"]');
-		for (var i = 0; i < walls.length; i++) {
-			walls[i].id = walls[i].id + "_mobile";
-		}
+		$('[id^="wall_"]').removeClass(function(index, className) {
+			return (className.match(/wall_\d/) || []).join(' ');
+		});
+		$("#wall_1").backstretch("Images/Back-aqua.jpg");
+		$("#wall_2").backstretch("Images/Back-Jelly.jpg");
+		$("#wall_3").backstretch("Images/Back-Macro.jpg");
+		$("#wall_4").backstretch("Images/Back-Land.jpg");
+		
+		$('#anchors').remove(); // Don't need the anchor link nav on mobile
 	}
 	
 	currentRowWidth = 3; // Always starts off this way

@@ -1,22 +1,30 @@
-#wall_1 {
+.wall_1 {
     background: url(../Images/Back-aqua.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
-#wall_2 {
+
+.wall_2 {
     background: url(../Images/Back-Jelly.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-#wall_3 {
+
+.wall_3 {
     background: url(../Images/Back-Macro.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-#wall_4 {
+
+.wall_4 {
     background: url(../Images/Back-Land.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
+}
+
+.wall {
+	height: 700px;
+	z-index: 1;
 }
 
 #wall_1_mobile {
