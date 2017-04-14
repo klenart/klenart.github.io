@@ -58,9 +58,12 @@ function rearrangeGallery() {
 }
 
 $(document).ready(function($) {
-	require('js/jquery.stellar.js', function() {
-		$.stellar();
-	});
+	if (!/Mobi/.test(navigator.userAgent)) {
+		// Stellar only works on the desktop
+		require('js/jquery.stellar.js', function() {
+			$.stellar();
+		});
+	}
 	
 	currentRowWidth = 3; // Always starts off this way
 	
