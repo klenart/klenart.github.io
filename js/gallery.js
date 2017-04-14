@@ -8,22 +8,17 @@ $(document).ready(function($) {
 		autoplaySpeed: 2000,
 		slidesToShow: 3,
 		arrows: false,
+		infinite: true,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1600,
 				settings: {
-					arrows: true,
-					centerMode: true,
 					slidesToShow: 1
 				}
 			},
 			{
-			  breakpoint: 480,
-			  settings: {
-				arrows: true,
-				centerMode: true,
-				slidesToShow: 0
-			  }
+				breakpoint: 550,
+				settings: "unslick"
 			}
 		]
 	});

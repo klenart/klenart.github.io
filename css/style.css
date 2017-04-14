@@ -216,7 +216,6 @@ h1::first-letter {
 
 .slick{
   padding-top: 20px;
-  margin: 20px 20px;
 }
 
 .slick-slide{
@@ -224,10 +223,11 @@ h1::first-letter {
 }
 
 .slick-center{
-	display: block;
 	opacity: 1;
 }
 
 .slick img {
 	margin: 0 auto;
+	width: 500px;
+	height: auto;
 }
