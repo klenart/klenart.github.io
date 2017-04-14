@@ -214,35 +214,20 @@ h1::first-letter {
     color:#0438e3;
 }
 
-
-
-
-.center{
-  align-self: center;
+.slick{
   padding-top: 20px;
+  margin: 20px 20px;
 }
-.slick-center .slide-h3{
-    color: #FFF;
-  }
-  .slider{
-    width: 80%;
-    height:150px;
-    margin: 20px;
-    text-align: center;
-  }
-  .slide-h3{
-    margin: 10% 0 10% 0;
-    padding: 40% 20%;
-    background: #008ed6;
-  }
-  .slider div{
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  .slick-slide{
-    opacity: .5;
-  }
-  .slick-center{
-    display: block;
-    opacity: 1;
-  }
+
+.slick-slide{
+	opacity: .5;
+}
+
+.slick-center{
+	display: block;
+	opacity: 1;
+}
+
+.slick img {
+	margin: 0 auto;
+}
