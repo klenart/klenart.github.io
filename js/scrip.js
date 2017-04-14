@@ -9,10 +9,60 @@ function require(script, successCallback) {
     });
 }
 
-$(window).load(function() {
+var galleryTable = $('#recent-image-gallery');
+var images = ["Land-1.jpg", "Land-2.jpg", "Land-3.jpg", "Land-4.jpg", "Land-5.jpg", "Macro-1.jpg"];
+images = images.map(function(img) {
+	return "Images/" + img;
+});
+
+function chooseRandom(choices, count) {
+	
+	for (i = choices.length - 1; i > 1; i--) {
+		var rand = Math.floor(Math.random()*i);
+		var temp = choices[i];
+		choices[i] = choices[rand];
+		choices[rand] = temp;
+	}
+	
+	return choices.slice(0, count);
+}
+
+function calcRowWidth() {
+	var width = $(window).width(),
+		imgWidth = $('.thumbnail')[0].width;
+	return Math.min(Math.floor(width/imgWidth), 3); // Don't want too many abreast - may change this later
+}
+
+var currentRowWidth;
+
+function rearrangeGallery() {
+	var rowWidth = calcRowWidth();
+	if (rowWidth == currentRowWidth) return; // Don't want to bother with this other stuff if there's nothing to change
+	currentRowWidth = rowWidth;
+	
+	// If it's too narrow, we don't want a huge stack of images
+	var columnHeight = rowWidth == 1 ? 3 : images.length/rowWidth;
+	
+	var displayImages = chooseRandom(images, columnHeight * rowWidth);
+	var imgTable = $('#recent-image-gallery');
+	imgTable.empty();
+	
+	var currentImg = 0;
+	for (var i = 0; i < columnHeight; i++) {
+		imgTable.append('<tr></tr>');
+		var row = imgTable.children().last();
+		for (var k = 0; k < rowWidth; k++) {
+			row.append('<td><div class="zoom_img"><img src="' + displayImages[currentImg++] + '" class="thumbnail"></img></div></td>');
+		}
+	}
+}
+
+$(document).ready(function($) {
 	require('js/jquery.stellar.js', function() {
-		$(window).stellar();
+		$.stellar();
 	});
+	
+	currentRowWidth = calcRowWidth();
 	
 	require('js/jquery.nicescroll.js', function() {	
 		$("html").niceScroll({
@@ -23,4 +73,10 @@ $(window).load(function() {
 			cursorborder:"0px solid #fff",
 		});
 	});
+	
+	rearrangeGallery();
+});
+
+$(window).resize(function($) {
+	rearrangeGallery();
 });
